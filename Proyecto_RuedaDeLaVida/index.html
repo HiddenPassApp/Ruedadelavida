@@ -11,13 +11,19 @@
             margin: 0;
             padding: 0;
         }
+        .navbar {
+            background-color: #000;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #000;
-            color: #fff;
+            height: calc(100vh - 60px); /* Ajusta la altura para el navbar */
+            background-color: #f4f4f4;
         }
         .form {
             display: flex;
@@ -33,10 +39,14 @@
             flex: 1;
             margin: 0 10px;
         }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
         input[type="text"], input[type="number"] {
             width: 100%;
             padding: 10px;
-            margin: 10px 0;
+            margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
@@ -48,23 +58,22 @@
             border-radius: 4px;
             cursor: pointer;
             margin-top: 10px;
+            width: 100%;
         }
         button:hover {
             background-color: #444;
-        }
-        h1 {
-            text-align: center;
-            width: 100%;
-            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
+<div class="navbar">
+    Rueda de la Vida
+</div>
+
 <div class="container">
     <form class="form">
         <div>
-            <h1>RUEDA DE LA VIDA</h1>
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" placeholder="NICK FERNANDO">
             <label for="ocio">Ocio</label>
