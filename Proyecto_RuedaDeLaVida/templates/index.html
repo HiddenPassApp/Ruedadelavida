@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rueda de la Vida</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    Rueda de la Vida
+</div>
+
+<div class="container">
+    <form action="/enviar" method="post" class="form">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="NICK FERNANDO" required>
+            <label for="ocio">Ocio</label>
+            <input type="number" id="ocio" name="ocio" min="1" max="10"  placeholder="8" required>
+            <label for="dinero">Dinero</label>
+            <input type="number" id="dinero" name="dinero"  min="1" max="10" placeholder="1" required>
+            <label for="trabajo">Trabajo</label>
+            <input type="number" id="trabajo" name="trabajo"  min="1" max="10" placeholder="1" required>
+            <label for="fisica">Física</label>
+            <input type="number" id="fisica" name="fisica"  min="1" max="10" placeholder="9" required>
+            <button type="submit">Enviar</button>
+        </div>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="MENENDEZ TORRES" required>
+            <label for="personal">Personal</label>
+            <input type="number" id="personal" name="personal"  min="1" max="10" placeholder="2" required>
+            <label for="familiar">Familiar</label>
+            <input type="number" id="familiar" name="familiar"  min="1" max="10" placeholder="1" required>
+            <label for="social">Social</label>
+            <input type="number" id="social" name="social"  min="1" max="10" placeholder="10" required>
+            <label for="espiritual">Espiritual</label>
+            <input type="number" id="espiritual" name="espiritual"  min="1" max="10" placeholder="1" required>
+            <a href="/leer">Leer</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
