@@ -35,7 +35,7 @@ def enviar_datos():
     wr = csv.writer(csvfile, dialect='excel', delimiter=',')
     wr.writerow(totalMavIa)
   
-  return redirect(url_for('home'))
+  return redirect(url_for('persona'))
 
 @app.route("/leer")
 def leer():

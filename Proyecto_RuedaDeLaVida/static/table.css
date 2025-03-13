@@ -1,0 +1,17 @@
+.container{
+    justify-content: center;
+    text-align: center;
+}
+a{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}

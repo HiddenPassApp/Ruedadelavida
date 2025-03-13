@@ -67,4 +67,7 @@ a{
     cursor: pointer;
     margin-top: 10px;
     text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 14px;
 }
