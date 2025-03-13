@@ -1,0 +1,44 @@
+
+body {
+    display: flex; /* Usar flexbox para centrar contenido */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    background-color: #26292F;
+}
+
+
+img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 20px; 
+}
+
+/* Estilo para los encabezados */
+h1, h2, h3 {
+    text-align: center; /* Centrar texto */
+    color: #ffff; /* Color de texto oscuro */
+}
+
+/* Estilo para el párrafo */
+p {
+    text-align: center; /* Centrar texto */
+    color: #ffff; /* Color de texto más claro */
+}
+
+a {
+    display: inline-block; /* Hacer que el enlace se comporte como un bloque */
+    margin-top: 20px; /* Espacio encima del enlace */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #007BFF; /* Color de fondo del enlace */
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+a:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}

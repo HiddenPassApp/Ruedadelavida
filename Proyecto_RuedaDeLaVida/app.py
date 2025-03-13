@@ -8,6 +8,10 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route("/persona")
+def persona():
+    return render_template("persona.html")
+
 @app.route('/enviar', methods=['POST'])
 def enviar_datos():
   nombre = request.form['nombre']

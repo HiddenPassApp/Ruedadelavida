@@ -1,47 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rueda de la Vida</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_Start_Screen.css') }}">
 </head>
 <body>
+    <img src="{{ url_for('static', filename='HiddenPass.png') }}" alt="HIDENPASS_Logo">
+    
+    <h1>BIENVENIDO A PROYECTO HIDENPASS</h1>
+    <br>
+    <h2>RUEDA DE LA VIDA</h2>
+    <br><br><br>
+    <h3>REALIZADO POR:</h3>
+    <p>
+        NICKY ALEXANDER FLOREZ BUSTAMANTE 
+    </p>
+    <p>
+        JUAN ANDRES MENENDEZ VILLARRAGA 
+    </p>
+    <p>DAVID FERNANDO GOMEZ ARISTIZABAL</p>
 
-<div class="navbar">
-    Rueda de la Vida
-</div>
-
-<div class="container">
-    <form action="/enviar" method="post" class="form">
-        <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="NICK FERNANDO" required>
-            <label for="ocio">Ocio</label>
-            <input type="number" id="ocio" name="ocio" min="1" max="10"  placeholder="8" required>
-            <label for="dinero">Dinero</label>
-            <input type="number" id="dinero" name="dinero"  min="1" max="10" placeholder="1" required>
-            <label for="trabajo">Trabajo</label>
-            <input type="number" id="trabajo" name="trabajo"  min="1" max="10" placeholder="1" required>
-            <label for="fisica">Física</label>
-            <input type="number" id="fisica" name="fisica"  min="1" max="10" placeholder="9" required>
-            <button type="submit">Enviar</button>
-        </div>
-        <div>
-            <label for="apellido">Apellido</label>
-            <input type="text" id="apellido" name="apellido" placeholder="MENENDEZ TORRES" required>
-            <label for="personal">Personal</label>
-            <input type="number" id="personal" name="personal"  min="1" max="10" placeholder="2" required>
-            <label for="familiar">Familiar</label>
-            <input type="number" id="familiar" name="familiar"  min="1" max="10" placeholder="1" required>
-            <label for="social">Social</label>
-            <input type="number" id="social" name="social"  min="1" max="10" placeholder="10" required>
-            <label for="espiritual">Espiritual</label>
-            <input type="number" id="espiritual" name="espiritual"  min="1" max="10" placeholder="1" required>
-            <a href="/leer">Leer</a>
-        </div>
-    </form>
-</div>
-
-</body>
+    <a href="/persona">Ingresar a Rueda de la vida</a>
+</body> 
 </html>
